@@ -22,17 +22,18 @@
       <li>Email: ap9940506@gmail.com</li>
     </ul>
     <div class="flex gap-x-6">
+      <span class="ml-2"></span>
       <a href="https://github.com/uier">
-        <img class="w-8 h-8 fill-slate-600" src="icones/uil-github.svg">
+        <img class="w-7 h-7" style="margin-top: 1rem; margin-bottom: 1rem;" src="icones/uil-github.svg">
       </a>
       <a href="https://www.facebook.com/TnUier/">
-        <img class="w-8 h-8 fill-slate-600" src="icones/uil-facebook.svg">
+        <img class="w-7 h-7" style="margin-top: 1rem; margin-bottom: 1rem;" src="icones/uil-facebook.svg">
       </a>
       <a href="https://t.me/TzuWei">
-        <img class="w-8 h-8 fill-slate-600" src="icones/uil-telegram.svg">
+        <img class="w-7 h-7" style="margin-top: 1rem; margin-bottom: 1rem;" src="icones/uil-telegram.svg">
       </a>
       <a href="https://twitter.com/uier890305">
-        <img class="w-8 h-8 fill-slate-600" src="icones/uil-twitter.svg">
+        <img class="w-7 h-7" style="margin-top: 1rem; margin-bottom: 1rem;" src="icones/uil-twitter.svg">
       </a>
     </div>
   </section>
@@ -103,25 +104,30 @@
   <h1 class="font-bold">Project</h1>
   <h3>互動式視覺化分析工具輔助於網軍發掘與驗證</h3>
   <ul>
-    <li>My undergraduate project, proposing an interactive visulization tool to dig users on PTT (Taiwan's Reddit) that behave like a cyber army.</li>
+    <li>My undergraduate project, which proposes an interactive visualization tool to assist the public in identifying users on PTT (Taiwan's Reddit) that act like a cyber army.</li>
     <li><a href="https://github.com/junior-proj/essay/blob/master/%E4%BA%92%E5%8B%95%E5%BC%8F%E8%A6%96%E8%A6%BA%E5%8C%96%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7%E8%BC%94%E5%8A%A9%E6%96%BC%E7%B6%B2%E8%BB%8D%E7%99%BC%E6%8E%98%E8%88%87%E9%A9%97%E8%AD%89.pdf">PDF</a></li>
   </ul>
   <h3>Python 創作分享平台</h3>
   <ul>
-    <li>An online platform developed for programming teaching, combiming online judge, discussion forum and course management.</li>
+    <li>An online programming education platform that combines online judge, discussion forum and course management.</li>
     <li>I am responsible for all frontend design and programming by Vue.js, and tracking issues occurred on the client side.</li>
     <li><a href="https://www.youtube.com/watch?v=Qm7WqnfuIg0">Video</a>, <a href="https://www.youtube.com/watch?v=3Ju54xe5gu8">Presentation</a>, <a href="https://gitlab.com/pyshare">GitLab</a></li>
   </ul>
   <h3>Normal Online Judge</h3>
   <ul>
-    <li>An online judge by students from CSIE NTNU to satisfy the needs of the department's courses.</li>
-    <li>We developed the web app from scatch, and I worked on mostly frontend development and a few requirements about backend.</li>
+    <li>An online judge developed by CSIE NTNU students to meet the needs of the department's courses.</li>
+    <li>We built the web app from the ground up, and I was mostly responsible for frontend programming and a few database requirements.</li>
     <li><a href="https://www.noj.tw/">Website</a>, <a href="https://www.facebook.com/noj.tw">Facebook</a>, <a href="https://github.com/Normal-OJ">GitHub</a></li>
   </ul>
   <h3>hackbar</h3>
   <ul>
     <li>A browser extension for using kbar in HackMD.</li>
     <li><a href="https://hackmd.io/@uier/kbar-component-hackbar">Proposal</a>, <a href="https://github.com/uier/hackbar">GitHub</a></li>
+  </ul>
+  <h3>Course Selection Helper</h3>
+  <ul>
+    <li>An UX project aims to improve the process of course selection by doing user research.</li>
+    <li><a href="https://uxfol.io/project/03103997/">Portfolio</a></li>
   </ul>
 
   <div class="mt-16"></div>
@@ -149,12 +155,13 @@
 
   <div class="mt-60"></div>
 
-  <!-- <div class="my-10 bg-white">
-    <div class="flex flex-row justify-center items-center space-x-5">
-      <a class="underline" target="_blank" rel="noopener noreferrer" href="https://dribbble.com/shots/14318192-To-do-Task-Management-Apps">source of design</a>
-      <a class="underline" target="_blank" rel="noopener noreferrer" href="https://github.com/Uier/ui-design-daily/tree/master/Dribbble-Todo-Task-Management">source of code</a>
-    </div>
-  </div> -->
-  <script type="module" src="./index.js"></script>
+  <script>
+    window.onload = () => {
+      Array.prototype.forEach.call(document.querySelectorAll('a'), (link) => {
+        link.target = '_blank'; 
+        link.rel = 'noreferrer noopenner';
+      });
+    }
+  </script>
 </body>
 </html>
